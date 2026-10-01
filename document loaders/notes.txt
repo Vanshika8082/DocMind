@@ -1,0 +1,45 @@
+RAG Demo Knowledge Base: Acme Support and Product Guide
+
+1. About Acme
+Acme is a fictional software company that provides a task management application for small teams. The app helps users create projects, assign tasks, set due dates, add comments, and track progress. This document is sample data created for testing a Retrieval-Augmented Generation (RAG) application.
+
+2. Account and Sign-In
+Users can sign in with the email address and password they registered with. If a user forgets their password, they can select “Forgot password” on the sign-in page and follow the reset link sent to their email. Password reset links expire after 30 minutes. If the email does not arrive, users should check their spam folder and confirm that they entered the correct email address.
+
+3. Projects
+A project is a workspace for organizing related tasks. To create a project, open the Projects page, select “New Project,” enter a project name, and select “Create.” Project owners can rename a project, invite team members, and archive projects. Archiving hides a project from the active project list but does not permanently delete its data.
+
+4. Tasks and Due Dates
+Each task can have a title, description, assignee, priority, due date, and status. The available statuses are To Do, In Progress, and Done. Users can change a task’s status from the task details panel. A task can have only one primary assignee, but other team members may follow the task and receive updates.
+
+5. Search
+The global search box can find projects and tasks by title or by words in their descriptions. Search results depend on the user's access permissions. If a user cannot access a project, its tasks will not appear in their search results.
+
+6. Notifications
+Acme sends in-app notifications when a user is assigned a task, mentioned in a comment, or invited to a project. Email notifications can be adjusted from Settings > Notifications. Users may turn off non-essential email notifications, but security-related messages, such as password reset emails, may still be sent.
+
+7. Data Export
+Project owners can export project task data as a CSV file from Project Settings > Export. The export includes task titles, descriptions, assignees, due dates, priorities, and statuses. It does not include user passwords or authentication tokens. Only users with the appropriate project permissions can export project data.
+
+8. Security and Privacy
+Users should never share their passwords or API keys with other people. Acme support staff will not ask users to send their password in a support ticket. API keys should be stored in environment variables or a secret manager, not committed to source control. Access to projects is controlled by workspace membership and project permissions.
+
+9. Troubleshooting
+If a page does not load, refresh the browser and check the internet connection. If the problem continues, sign out and sign in again. Users should include the browser name, the approximate time of the issue, and a description of the steps that caused the problem when contacting support. They should not include passwords, session cookies, or API keys in the ticket.
+
+10. Billing
+The fictional Acme Starter plan supports up to 5 team members and 3 active projects. The fictional Acme Team plan supports up to 50 team members and unlimited active projects. Plan details in this sample document are illustrative only and do not describe a real product or real pricing policy.
+
+11. Sample Questions for RAG Testing
+- What should a user do if they forget their password?
+- How long does a password reset link remain valid?
+- What are the three task statuses?
+- Can a project be archived without permanently deleting its data?
+- Which events can trigger an in-app notification?
+- What information is included in a CSV export?
+- Should API keys be committed to source control?
+- What details should a user include when reporting a page-loading issue?
+- How many team members can the fictional Starter plan support?
+
+12. Grounding Rule for the Assistant
+When answering questions about this knowledge base, use the information in the retrieved passages. If the document does not contain the answer, say that the information is not available in the provided knowledge base instead of inventing details.

@@ -149,6 +149,3 @@ python app.py
 
 Use the actual entry-point file from your project if it has a different name.
 
-## 📄 License
-
-This project is intended primarily for educational and learning purposes.
